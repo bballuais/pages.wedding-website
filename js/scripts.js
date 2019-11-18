@@ -184,17 +184,17 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Laurent and Giulia's Wedding",
+            title: "Benjamin and Nithya's Wedding",
 
             // Event start date
-            start: new Date('Jul 19, 2019 16:00'),
+            start: new Date('Aug 29, 2019 16:00'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Jul 20, 2019 04:00'),
+            end: new Date('Aug 30, 2019 20:00'),
 
             // Event Address
             address: 'Via XXIV Maggio, 1, 15026 Oviglio AL, Italie',
