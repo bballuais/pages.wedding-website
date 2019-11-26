@@ -137,7 +137,7 @@ $(document).ready(function () {
     });
 
     /********************** Social Share buttons ***********************/
-   /* var share_bar = document.getElementsByClassName('share-bar');
+    var share_bar = document.getElementsByClassName('share-bar');
     var po = document.createElement('script');
     po.type = 'text/javascript';
     po.async = true;
@@ -147,11 +147,11 @@ $(document).ready(function () {
 
     for (var i = 0; i < share_bar.length; i++) {
         var html = '<iframe allowtransparency="true" frameborder="0" scrolling="no"' +
-            //'src="https://platform.twitter.com/widgets/tweet_button.html?url=' + //encodeURIComponent(window.location) + '&amp;text=' + //encodeURIComponent(document.title) + //'&amp;via=WeeBoo&amp;hashtags=LaurentAndGiulia&amp;count=horizontal"' +
+            'src="https://platform.twitter.com/widgets/tweet_button.html?url=' + encodeURIComponent(window.location) + '&amp;text=' + encodeURIComponent(document.title) + '&amp;via=WeeBoo&amp;hashtags=LaurentAndGiulia&amp;count=horizontal"' +
             'style="width:105px; height:21px;">' +
             '</iframe>' +
 
- //           '<iframe src="//www.facebook.com/plugins/like.php?href=' + //encodeURIComponent(window.location) + //'&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21&amp;appId=387405285345104&amp;width=150" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:150px; height:21px;" allowTransparency="true"></iframe>';
+            '<iframe src="//www.facebook.com/plugins/like.php?href=' + encodeURIComponent(window.location) + '&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21&amp;appId=387405285345104&amp;width=150" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:150px; height:21px;" allowTransparency="true"></iframe>';
            
             //'<div class="g-plusone" data-size="medium"></div>';
 
@@ -160,7 +160,7 @@ $(document).ready(function () {
         share_bar[i].innerHTML = html;
         share_bar[i].style.display = 'inline-block';
     }
-*/
+
     /********************** Embed youtube video *********************/
     $('.player').YTPlayer();
 
@@ -187,20 +187,20 @@ $(document).ready(function () {
             title: "Benjamin and Nithya's Wedding",
 
             // Event start date
-            start: new Date('Aug 29, 2020 16:00'),
+            start: new Date('Aug 29, 2019 16:00'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Aug 30, 2020 20:00'),
+            end: new Date('Aug 30, 2019 20:00'),
 
             // Event Address
-            address: '37 Rue du Calvaire, 49270 Orée-d Anjou, France',
+            address: 'Via XXIV Maggio, 1, 15026 Oviglio AL, Italie',
 
             // Event Description
-            description: "Nous avons hâte de passer cette journée avec vous. Pour toutes questions éventuelles, n'hésitez pas à nous contacter."
+            description: "We can't wait to spend this day with you. For any questions or issues don't hesitate to contact us."
         }
     });
 
@@ -219,7 +219,7 @@ $(document).ready(function () {
         //     && MD5($('#invite_code').val()) !== 'c6e63ad45b4a45a081dbaae07d4b0d0b') {
         //     $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         // } else {
-            $.post('https://script.google.com/macros/s/AKfycbwzE5LgHMPrAcWNTdl4OFsTtjLbSiLXbmMBCfGn/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbzAZaJUBMU_5x22JiJdbfSc0SiIRcYQYp1XXn-BOcqAgOCN6n2e/exec', data)
                 .done(function (data) {
                     console.log(data);
                     $('#alert-wrapper').html('');
@@ -238,7 +238,7 @@ $(document).ready(function () {
 
 // Google map
 function initMap() {
-    var itc_kol = {lat: 47.2877321, lng: -1.2557224};
+    var itc_kol = {lat: 44.860256, lng: 8.487096};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: itc_kol,
@@ -252,7 +252,7 @@ function initMap() {
 }
 
 function initBBSRMap() {
-    var la_fiesta = {lat: 47.2877321, lng: -1.2557224};
+    var la_fiesta = {lat: 44.860256, lng: 8.487096};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: la_fiesta,
